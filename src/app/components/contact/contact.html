@@ -1,0 +1,21 @@
+<section id="contact" class="contact-section">
+  <h2>Contacto</h2>
+
+  <div class="contact-info">
+    <p><strong>📞 Teléfono Ecuador: </strong> <a [href]="'tel: ' + phoneEC">{{ phoneEC }}</a></p>
+    <p><strong>📞 Teléfono Argentina: </strong> <a [href]="'tel: ' + phoneArg">{{ phoneArg }}</a></p>
+    <p><strong>📧 Correo:</strong> <a [href]="'mailto: ' + email">{{ email }}</a></p>
+  </div>
+
+  <div class="social-links">
+    <a [href]="whatsappLink" target="_blank" aria-label="WhatsApp">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+    </a>
+    <a [href]="linkedin" target="_blank" aria-label="LinkedIn">
+      <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" />
+    </a>
+    <a [href]="github" target="_blank" aria-label="GitHub">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" />
+    </a>
+  </div>
+</section>
