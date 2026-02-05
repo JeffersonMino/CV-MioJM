@@ -18,17 +18,17 @@ export class Education {
  protected readonly education = signal<Educacion[]>([
   
     {
-      date: '2026',
-      title: 'Curso Desarollo con IA',
-      institution: 'Big School',
-      details: 'Implementacion de IA en Desarrollo de software'
-    },  
-    {
       date: '2014 - 2019',
       title: 'Ingeniería en Sistemas',
       institution: 'Universidad Yanki Kypala Repuplica de Belarus',
       details: 'Especialización en desarrollo de software y bases de datos.'
     },
+    {
+      date: '2026',
+      title: 'Curso Desarollo con IA',
+      institution: 'Big School',
+      details: 'Implementacion de IA en Desarrollo de software'
+    },     
     {
       date: '2018',
       title: 'Desarrollo',
@@ -40,6 +40,12 @@ export class Education {
       title: 'Curso Avanzado en Angular',
       institution: 'Platzi',
       details: 'Aplicaciones web SPA modernas con Angular y TypeScript.'
+    },
+        {
+      date: '2024',
+      title: 'Curso Avanzado en flutter',
+      institution: 'Platzi',
+      details: 'Aplicaciones móviles modernas con Flutter y Dart.'
     }
     
   ]);

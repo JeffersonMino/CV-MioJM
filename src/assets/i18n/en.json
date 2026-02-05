@@ -1,0 +1,12 @@
+{
+  "header": {
+    "role": "Desarrollador Full Stack Senior"
+  },
+  "menu": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "education": "Educación",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  }
+}

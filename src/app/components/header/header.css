@@ -215,3 +215,30 @@ nav a:hover {
     color: #00fff7;
   }
 }
+
+.lang-switch {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.lang-switch button {
+  background: transparent;
+  border: 2px solid #00fff7;
+  color: #00fff7;
+  padding: 0.3rem 0.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.lang-switch button:hover {
+  background: #00fff7;
+  color: #0f172a;
+}
+
+.lang-switch button.active {
+  background: #00fff7;
+  color: #0f172a;
+}

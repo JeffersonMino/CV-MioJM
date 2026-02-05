@@ -15,7 +15,7 @@ interface Skill {
 })
 export class Skills {
  protected readonly skills = signal<Skill[]>([
-    { name: '.NET', image: '/img/DoNet.png' , url: 'https://dotnet.microsoft.com/' },
+    { name: '.NET', image: './img/DoNet.png' , url: 'https://dotnet.microsoft.com/' },
     { name: 'SQL', image: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png', url: 'https://www.microsoft.com/en-us/sql-server' },
     { name: 'ORACLE', image: 'https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg', url: 'https://www.oracle.com/' },
     { name: 'PostgreSQL', image: 'https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg', url: 'https://www.postgresql.org/' },

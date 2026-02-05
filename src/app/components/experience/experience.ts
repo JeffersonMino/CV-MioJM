@@ -27,11 +27,11 @@ protected readonly experiences = signal<experiencia[]>([
       company: 'PROCONTY',
       location: 'Quito',
       description: [
-        'Diseño e implementación de aplicaciones Full Stack utilizando .NET Core, ASP.NET, Java y Angular',        
-        'Desarrollo y consumo de APIs REST para integración de sistemas críticos.',
-        'Análisis técnico, optimización de procesos y resolución de incidencias complejas.',
+        'Diseño e implementación de aplicaciones empresariales Full Stack utilizando .NET Core, Java y Angular.',        
+        'Desarrollo y consumo de APIs REST para integración de sistemas financieros.',
+        'Análisis técnico y resolución de incidencias complejas en entornos productivos.',
         'Gestión de código y 􀃮ujos de trabajo con Git y GitLab, asegurando calidad y trazabilidad.',
-        'Trabajo con SQL Server y Oracle en entornos productivos de alta disponibilidad.'
+        'Optimización de consultas en SQL Server y Oracle, mejorando tiempos de respuesta y estabilidad del sistema.'
       ],
       technologies: ['.NET', '.NET Core', 'DevExpress', 'MVC', 'Oracle', 'Angular', 'C#', 'HTML', 'CSS', 'Java', 'Git', 'GitLab']
     },  
@@ -41,10 +41,10 @@ protected readonly experiences = signal<experiencia[]>([
       company: 'Consejo Nacional Electoral "CNE"',
       location: 'Quito',
       description: [
-        'Desarrollo de aplicaciones electorales especializadas.',
-        'Desarrollo y mantenimiento de módulos backend en C# y .NET Core.',
-        'Aplicación de metodología MVC para proyectos escalables.',
-        'Optimización de consultas y gestión de bases de datos con Oracle 12.5.'
+        'Desarrollo de sistemas electorales críticos bajo altos estándares de seguridad, confiabilidad y rendimiento.',
+        'Implementación de servicios backend en C# y .NET Core para garantizar integridad y trazabilidad de los datos.',
+        'Aplicación de arquitectura MVC para mejorar mantenibilidad y escalabilidad.',
+        'Optimización de bases de datos Oracle 12.5 para manejo de grandes volúmenes de información.'
       ],
       technologies: ['.NET', '.NET Core', 'DevExpress', 'MVC', 'Oracle 12.5', 'Angular', 'C#', 'HTML', 'CSS']
     },
@@ -54,8 +54,10 @@ protected readonly experiences = signal<experiencia[]>([
       company: 'Consejo Nacional Electoral "CNE"',
       location: 'Quito',
       description: [
-        'Desarrollo de sistemas para control de la contabilidad electoral.',
-        'Desarrollo Full Stack para integración de datos y finalización electoral.'
+        'Desarrollo de sistemas para control de contabilidad electoral.',
+        'Implementación de soluciones Full Stack para integración y consolidación de datos.',
+        'Desarrollo de módulos backend robustos en .NET Core y C#.',
+        'Trabajo en entornos regulados con altos estándares de calidad.',
       ],
       technologies: ['.NET', '.NET Core', 'DevExpress', 'MVC', 'Oracle 12.5', 'Angular', 'C#', 'HTML', 'CSS']
     },

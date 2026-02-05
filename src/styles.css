@@ -88,3 +88,15 @@ footer {
 .floating-buttons a:hover::after {
   opacity: 1;
 }
+
+.views-counter {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(15, 23, 42, 0.9);
+  color: #00fff7;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(0,255,247,0.4);
+}

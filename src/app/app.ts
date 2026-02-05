@@ -6,6 +6,8 @@ import { Experience } from './components/experience/experience';
 import { Education } from './components/education/education';
 import { Skills } from './components/skills/skills';
 import { Contact} from './components/contact/contact';
+import {TRANSLATION_IMPORTS} from './shared/transloco.shared' 
+import { TranslocoService } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-root',
@@ -15,11 +17,19 @@ import { Contact} from './components/contact/contact';
     Experience,
     Education,
     Skills,
-    Contact
+    Contact,
+    TRANSLATION_IMPORTS
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
   protected readonly title = signal('CV-JM');
+  views = signal(0);
+
+  ngOnInit() {
+    fetch('https://api.countapi.xyz/hit/jefferson-cv/views')
+      .then(res => res.json())
+      .then(data => this.views.set(data.value));
+  }
 }

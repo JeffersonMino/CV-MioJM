@@ -1,7 +1,7 @@
-<header id="header" class="header">
-  <div class="header-top">
+<!-- <header id="header" class="header">
+  <div class="header-top"> -->
     <!-- Imagen clickeable -->
-    <img 
+    <!-- <img 
       src="./img/perfil.jpg" 
       alt="Foto de Jefferson Santiago Miño Tasinchana" 
       class="profile-pic" 
@@ -11,13 +11,13 @@
       <h1>Jefferson Santiago Miño Tasinchana</h1>
       <h2>{{ title() }}</h2>
     </div>
-
+    
     <button class="hamburger" (click)="toggleMenu()" [class.open]="menuOpen()" aria-label="Menú">
     <span></span>
     <span></span>
     <span></span>
     </button>
-  </div>
+  </div> -->
 
   <!-- Menú overlay futurista -->
     <!-- <nav [class.open]="menuOpen()" (click)="closeMenu()">
@@ -30,12 +30,84 @@
 
   <!-- Modal de imagen -->
   <!-- Modal -->
-  <div class="modal" *ngIf="modalOpen()">
+  <!-- <div class="modal" *ngIf="modalOpen()">
     <div class="modal-content">
       <button class="close-btn" (click)="closeModal()">✖</button>
       <img src="./img/perfil.jpg" alt="Foto" class="modal-img" />
-    </div>
+    </div> -->
     <!-- Clic fuera de la imagen también cierra -->
-    <div class="modal-background" (click)="closeModal()"></div>
+    <!-- <div class="modal-background" (click)="closeModal()"></div>
   </div>
+</header> -->
+<header id="header" class="header">
+  <div class="header-top">
+
+    <!-- Imagen clickeable -->
+    <img
+      src="./img/perfil.jpg"
+      alt="Foto de Jefferson Santiago Miño Tasinchana"
+      class="profile-pic"
+      (click)="openModal()"
+    />
+
+    <div class="header-info">
+      <h1>Jefferson Santiago Miño Tasinchana</h1>
+      <h2>{{ title() }}</h2>
+    </div>
+
+    <!-- <div class="lang-switch">
+      <button 
+        (click)="setLang('es')" 
+        [class.active]="transloco.getActiveLang() === 'es'">
+        ES
+      </button>
+
+      <button 
+        (click)="setLang('en')" 
+        [class.active]="transloco.getActiveLang() === 'en'">
+        EN
+      </button>
+    </div> -->
+
+    <!-- Botón hamburguesa -->
+    <button
+      class="hamburger"
+      (click)="toggleMenu()"
+      [class.open]="menuOpen()"
+      aria-label="Menú"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+  <!-- MENÚ OVERLAY -->
+  @if (menuOpen()) {
+    <nav class="open">
+      <a href="#about" (click)="closeMenu()">Sobre mí</a>
+      <a href="#experience" (click)="closeMenu()">Experiencia</a>
+      <a href="#education" (click)="closeMenu()">Educación</a>
+      <a href="#skills" (click)="closeMenu()">Habilidades</a>
+      <a href="#contact" (click)="closeMenu()">Contacto</a>
+    </nav>
+  }
+
+  <!-- MODAL IMAGEN -->
+  @if (modalOpen()) {
+    <div class="modal">
+      <div class="modal-content">
+        <button class="close-btn" (click)="closeModal()">✖</button>
+        <img
+          src="./img/perfil.jpg"
+          alt="Foto ampliada"
+          class="modal-img"
+        />
+      </div>
+
+      <!-- fondo para cerrar -->
+      <div class="modal-background" (click)="closeModal()"></div>
+    </div>
+  }
 </header>
